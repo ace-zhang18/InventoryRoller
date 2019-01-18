@@ -1,0 +1,445 @@
+master_discount
+0
+10
+10
+10
+20
+5
+30
+3
+50
+2
+item
+T1 Blueprints
+25
+25
+1
+5
+20
+item
+T2 Blueprints
+50
+50
+1
+5
+20
+item
+T3 Blueprints
+75
+75
+1
+5
+20
+item
+T1 Plates
+5
+15
+40
+60
+20
+item
+T2 Plates
+15
+25
+40
+60
+20
+item
+T3 Plates
+25
+35
+40
+60
+20
+item
+T1 Offense Textbook
+800
+800
+1
+3
+30
+item
+T2 Offense Textbook
+1000
+1000
+1
+3
+20
+item
+T3 Offense Textbook
+1200
+1200
+1
+3
+10
+item
+T1 Defense Textbook
+800
+800
+1
+3
+30
+item
+T2 Defense Textbook
+1000
+1000
+1
+3
+20
+item
+T3 Defense Textbook
+1200
+1200
+1
+3
+10
+item
+T1 Support Textbook
+800
+800
+1
+3
+30
+item
+T2 Support Textbook
+1000
+1000
+1
+3
+20
+item
+T3 Support Textbook
+1200
+1200
+1
+3
+10
+item
+T2 DD Gun
+50
+50
+1
+2
+20
+item
+T3 DD Gun
+250
+250
+1
+2
+10
+item
+T4 DD Gun
+1250
+1250
+1
+2
+5
+item
+T5 DD Gun
+6250
+6250
+1
+2
+3
+item
+T2 CL Gun
+50
+50
+1
+2
+20
+item
+T3 CL Gun
+250
+250
+1
+2
+10
+item
+T4 CL Gun
+1250
+1250
+1
+2
+5
+item
+T5 CL Gun
+6250
+6250
+1
+2
+3
+item
+T2 CA Gun
+50
+50
+1
+2
+20
+item
+T3 CA Gun
+250
+250
+1
+2
+10
+item
+T4 CA Gun
+1250
+1250
+1
+2
+5
+item
+T5 CA Gun
+6250
+6250
+1
+2
+3
+item
+T2 BB Gun
+50
+50
+1
+2
+20
+item
+T3 BB Gun
+250
+250
+1
+2
+10
+item
+T4 BB Gun
+1250
+1250
+1
+2
+5
+item
+T5 BB Gun
+6250
+6250
+1
+2
+3
+item
+T2 AA Gun
+50
+50
+1
+2
+20
+item
+T3 AA Gun
+250
+250
+1
+2
+10
+item
+T4 AA Gun
+1250
+1250
+1
+2
+5
+item
+T5 AA Gun
+6250
+6250
+1
+2
+3
+item
+T2 Fighter
+50
+50
+1
+2
+20
+item
+T3 Fighter
+250
+250
+1
+2
+10
+item
+T4 Fighter
+1250
+1250
+1
+2
+5
+item
+T5 Fighter
+6250
+6250
+1
+2
+3
+item
+T2 Dive Bomber
+50
+50
+1
+2
+20
+item
+T3 Dive Bomber
+250
+250
+1
+2
+10
+item
+T4 Dive Bomber
+1250
+1250
+1
+2
+5
+item
+T5 Dive Bomber
+6250
+6250
+1
+2
+3
+item
+T2 Torpedo
+50
+50
+1
+2
+20
+item
+T3 Torpedo
+250
+250
+1
+2
+10
+item
+T4 Torpedo
+1250
+1250
+1
+2
+5
+item
+T5 Torpedo
+6250
+6250
+1
+2
+3
+item
+T6 Torpedo
+31250
+31250
+1
+2
+1
+item
+T2 Submarine Torpedo
+50
+50
+1
+2
+20
+item
+T3 Submarine Torpedo
+250
+250
+1
+2
+10
+item
+T4 Submarine Torpedo
+1250
+1250
+1
+2
+5
+item
+T5 Submarine Torpedo
+6250
+6250
+1
+2
+3
+item
+Fire Extinguisher
+400
+600
+1
+2
+20
+item
+Repair Toolkit
+400
+600
+1
+2
+3
+item
+Drop Tank
+400
+600
+1
+2
+20
+item
+Anti-Torpedo Bulge
+400
+600
+1
+2
+20
+item
+SG Radar
+400
+600
+1
+2
+20
+item
+Type 1 AP Shell
+400
+600
+1
+2
+20
+item
+Improved Snorkel
+400
+600
+1
+2
+20
+item
+Improved Storage Battery
+400
+600
+1
+2
+20
+item
+AP Ammo Case
+400
+600
+1
+2
+20
+item
+HE Ammo Case
+400
+600
+1
+2
+20

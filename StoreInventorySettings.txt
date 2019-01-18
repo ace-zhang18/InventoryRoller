@@ -1,0 +1,515 @@
+<!-- This is a comment -->
+<!-- This file must be in the same folder as the jar for the program to properly work! -->
+<!-- Probabilities are rolled as such: each outcome is assigned a weight by the owner. -->
+<!-- The higher the weight, the higher chance of that outcome appearing. -->
+<!-- A random number is rolled and the likelihood of each outcome being selected is it's assigned weight divided by total weights -->
+<!-- All values must be integers -->
+<inventory>
+	<!-- Normally the app will use master_discount's discount entries when determining *all* item's discounts -->
+	<!-- if there are no discount tags in master_discount or they're all commented out -->
+	<!-- the program will assign discounts to each item based on their each of their internal discount tags separately -->
+	<master_discount>
+		<discount rate="0" weight="10" />
+		<discount rate="10" weight="10" />
+		<discount rate="20" weight="5" />
+		<discount rate="30" weight="3" />
+		<discount rate="50" weight="2" />
+	</master_discount>
+	<!-- you can add more item entries and each entry can contain varying amounts of discount elements -->
+	<item>
+		<name>T1 Blueprints</name>
+		<price min="25" max="25"/>
+		<amount min="1" max="5"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T2 Blueprints</name>
+		<price min="50" max="50"/>
+		<amount min="1" max="5"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T3 Blueprints</name>
+		<price min="75" max="75"/>
+		<amount min="1" max="5"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T1 Plates</name>
+		<price min="5" max="15"/>
+		<amount min="40" max="60"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T2 Plates</name>
+		<price min="15" max="25"/>
+		<amount min="40" max="60"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T3 Plates</name>
+		<price min="25" max="35"/>
+		<amount min="40" max="60"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T1 Offense Textbook</name>
+		<price min="800" max="800"/>
+		<amount min="1" max="3"/>
+		<weight>30</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T2 Offense Textbook</name>
+		<price min="1000" max="1000"/>
+		<amount min="1" max="3"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T3 Offense Textbook</name>
+		<price min="1200" max="1200"/>
+		<amount min="1" max="3"/>
+		<weight>10</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T1 Defense Textbook</name>
+		<price min="800" max="800"/>
+		<amount min="1" max="3"/>
+		<weight>30</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T2 Defense Textbook</name>
+		<price min="1000" max="1000"/>
+		<amount min="1" max="3"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T3 Defense Textbook</name>
+		<price min="1200" max="1200"/>
+		<amount min="1" max="3"/>
+		<weight>10</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T1 Support Textbook</name>
+		<price min="800" max="800"/>
+		<amount min="1" max="3"/>
+		<weight>30</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T2 Support Textbook</name>
+		<price min="1000" max="1000"/>
+		<amount min="1" max="3"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T3 Support Textbook</name>
+		<price min="1200" max="1200"/>
+		<amount min="1" max="3"/>
+		<weight>10</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T2 DD Gun</name>
+		<price min="50" max="50"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T3 DD Gun</name>
+		<price min="250" max="250"/>
+		<amount min="1" max="2"/>
+		<weight>10</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T4 DD Gun</name>
+		<price min="1250" max="1250"/>
+		<amount min="1" max="2"/>
+		<weight>5</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T5 DD Gun</name>
+		<price min="6250" max="6250"/>
+		<amount min="1" max="2"/>
+		<weight>3</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T2 CL Gun</name>
+		<price min="50" max="50"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T3 CL Gun</name>
+		<price min="250" max="250"/>
+		<amount min="1" max="2"/>
+		<weight>10</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T4 CL Gun</name>
+		<price min="1250" max="1250"/>
+		<amount min="1" max="2"/>
+		<weight>5</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T5 CL Gun</name>
+		<price min="6250" max="6250"/>
+		<amount min="1" max="2"/>
+		<weight>3</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T2 CA Gun</name>
+		<price min="50" max="50"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T3 CA Gun</name>
+		<price min="250" max="250"/>
+		<amount min="1" max="2"/>
+		<weight>10</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T4 CA Gun</name>
+		<price min="1250" max="1250"/>
+		<amount min="1" max="2"/>
+		<weight>5</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T5 CA Gun</name>
+		<price min="6250" max="6250"/>
+		<amount min="1" max="2"/>
+		<weight>3</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T2 BB Gun</name>
+		<price min="50" max="50"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T3 BB Gun</name>
+		<price min="250" max="250"/>
+		<amount min="1" max="2"/>
+		<weight>10</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T4 BB Gun</name>
+		<price min="1250" max="1250"/>
+		<amount min="1" max="2"/>
+		<weight>5</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T5 BB Gun</name>
+		<price min="6250" max="6250"/>
+		<amount min="1" max="2"/>
+		<weight>3</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T2 AA Gun</name>
+		<price min="50" max="50"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T3 AA Gun</name>
+		<price min="250" max="250"/>
+		<amount min="1" max="2"/>
+		<weight>10</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T4 AA Gun</name>
+		<price min="1250" max="1250"/>
+		<amount min="1" max="2"/>
+		<weight>5</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T5 AA Gun</name>
+		<price min="6250" max="6250"/>
+		<amount min="1" max="2"/>
+		<weight>3</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T2 Fighter</name>
+		<price min="50" max="50"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T3 Fighter</name>
+		<price min="250" max="250"/>
+		<amount min="1" max="2"/>
+		<weight>10</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T4 Fighter</name>
+		<price min="1250" max="1250"/>
+		<amount min="1" max="2"/>
+		<weight>5</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T5 Fighter</name>
+		<price min="6250" max="6250"/>
+		<amount min="1" max="2"/>
+		<weight>3</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T2 Dive Bomber</name>
+		<price min="50" max="50"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T3 Dive Bomber</name>
+		<price min="250" max="250"/>
+		<amount min="1" max="2"/>
+		<weight>10</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T4 Dive Bomber</name>
+		<price min="1250" max="1250"/>
+		<amount min="1" max="2"/>
+		<weight>5</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T5 Dive Bomber</name>
+		<price min="6250" max="6250"/>
+		<amount min="1" max="2"/>
+		<weight>3</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T2 Torpedo</name>
+		<price min="50" max="50"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T3 Torpedo</name>
+		<price min="250" max="250"/>
+		<amount min="1" max="2"/>
+		<weight>10</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T4 Torpedo</name>
+		<price min="1250" max="1250"/>
+		<amount min="1" max="2"/>
+		<weight>5</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T5 Torpedo</name>
+		<price min="6250" max="6250"/>
+		<amount min="1" max="2"/>
+		<weight>3</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T6 Torpedo</name>
+		<price min="31250" max="31250"/>
+		<amount min="1" max="2"/>
+		<weight>1</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T2 Submarine Torpedo</name>
+		<price min="50" max="50"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T3 Submarine Torpedo</name>
+		<price min="250" max="250"/>
+		<amount min="1" max="2"/>
+		<weight>10</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T4 Submarine Torpedo</name>
+		<price min="1250" max="1250"/>
+		<amount min="1" max="2"/>
+		<weight>5</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>T5 Submarine Torpedo</name>
+		<price min="6250" max="6250"/>
+		<amount min="1" max="2"/>
+		<weight>3</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>Fire Extinguisher</name>
+		<price min="400" max="600"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>Repair Toolkit</name>
+		<price min="400" max="600"/>
+		<amount min="1" max="2"/>
+		<weight>3</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>Drop Tank</name>
+		<price min="400" max="600"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>Anti-Torpedo Bulge</name>
+		<price min="400" max="600"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>SG Radar</name>
+		<price min="400" max="600"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>Type 1 AP Shell</name>
+		<price min="400" max="600"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>Improved Snorkel</name>
+		<price min="400" max="600"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>Improved Storage Battery</name>
+		<price min="400" max="600"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>AP Ammo Case</name>
+		<price min="400" max="600"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+	<item>
+		<name>HE Ammo Case</name>
+		<price min="400" max="600"/>
+		<amount min="1" max="2"/>
+		<weight>20</weight>
+		<discount rate="30" weight="5" />
+		<discount rate="50" weight="3" />
+	</item>
+</inventory>
